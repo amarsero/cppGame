@@ -1,7 +1,7 @@
 #pragma once
 #include "Vector3.h"
 
-class Player
+class SquarePawn
 {
 public:
 	Vector3 Position;

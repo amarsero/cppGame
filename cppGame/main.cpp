@@ -1,7 +1,7 @@
 #include <windows.h>
 #include "Renderer.h"
 #include "Input.h"
-#include "GameLoop.h"
+#include "Game.h"
 #include "InputMapper.h"
 #include "Libraries/sigslot.h"
 
@@ -95,7 +95,7 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdL
 		}
 
 		// Simulate
-		gameLoop.SimulateGame();
+		gameLoop.SimulateFrame();
 
 		//Render
 		StretchDIBits(hdc, 0, 0, renderState.Width, renderState.Height, 0, 0,

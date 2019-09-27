@@ -1,19 +1,17 @@
 #pragma once
 #include "Input.h"
 #include "Renderer.h"
-#include "Player.h"
+#include "Vector3.h"
 
-struct GameInfo
-{
-	Player Position;
-};
 class Game
 {
 public:
-	Game(Input& input, Renderer& renderer) : _input(input), _renderer(renderer) {}
-	void SimulateGame();
+	Game(Input& input, Renderer& renderer, Vector3 position) : _input(input), _renderer(renderer)
+	{
+	}
+	
+	void SimulateFrame();
 private:
 	Input& _input;
 	Renderer& _renderer;
-	GameInfo _gameInfo;
 };

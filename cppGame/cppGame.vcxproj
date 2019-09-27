@@ -123,7 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="InputMapper.cpp" />
     <ClCompile Include="main.cpp" />
@@ -132,7 +132,7 @@
     <ClCompile Include="Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameLoop.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="InputMapper.h" />
     <ClInclude Include="Libraries\sigslot.h" />
