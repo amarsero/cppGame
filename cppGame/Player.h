@@ -1,9 +1,10 @@
 #pragma once
 #include "Vector3.h"
 
-class SquarePawn
+class Player
 {
 public:
 	Vector3 Position;
+	Vector3 Size;
 };
 

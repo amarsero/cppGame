@@ -5,12 +5,15 @@
 
 struct GameInfo
 {
-	SquarePawn Position;
+	Player Player;
 };
 class Game
 {
 public:
-	Game(Input& input, Renderer& renderer) : _input(input), _renderer(renderer) {}
+	Game(Input& input, Renderer& renderer) : _input(input), _renderer(renderer)
+	{
+		_gameInfo.Player.Size = Vector3(100, 100);
+	}
 	void SimulateFrame();
 private:
 	Input& _input;
